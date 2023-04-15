@@ -6,7 +6,6 @@ import LoadingBlock from "./shared/LoadingBlock";
 import VideoCard from "./VideoCard";
 
 const Main: React.FC = () => {
-  console.log("entering here");
   const [data, setData] = useState([]);
   const [categoryId, setCategoryId] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);

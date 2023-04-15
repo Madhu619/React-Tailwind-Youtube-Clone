@@ -48,7 +48,6 @@ const Sidebar: React.FC = () => {
     if (searchKey !== "") fetchData();
   }, [searchKey]);
 
-  console.log(searchResult);
   return (
     <div className="flex navbar justify-between fixed w-full bg-white top-0 p-5 z-10">
       <div className="inline-flex my-3 ">
@@ -60,7 +59,7 @@ const Sidebar: React.FC = () => {
       </div>
       <div className="ml-10 flex w-4/12">
         <div className="grow relative">
-          <label className="relative">
+          <label className="relative block">
             <input
               className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-2xl py-2 pl-9 pr-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm shadow-inner"
               placeholder="Search"
